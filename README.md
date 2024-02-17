@@ -15,6 +15,7 @@ Pensé que sería un apartado más dentro del aprendizaje de programación como 
 Retomando y volviendo al curso en sí, y tal y como nos había adelantado el profesor a lo largo de lo que llevamos del
 mismo, esta manera de programar me imaginaba que sería algo que facilitaría el mantenimiento y la estructuración del
 código empleado en cualquier aplicación, la cual aunaría todo lo visto hasta el momento.
+
 ---
 ## 2. ==Aprendizaje==
 * *¿Qué has aprendido durante las 2 unidades?*
@@ -24,6 +25,7 @@ que tienen entre sí. Algo que es muy importante a la hora de utilizar la progra
 En segundo lugar, y no menos importante, a definir las propiedades y métodos necesarios para que el programa/aplicación
 funcione correctamente. Cabe mencionar en este momento a los constructores, métodos que llevan el nombre de la propia
 clase y que sirven para definir las propiedades que consideremos necesarias en la creación de un objeto.
+
 ---
 ## 3. ==Prácticas==
 * *Elige los 2 ejercicios de las prácticas que consideres más importantes.*
