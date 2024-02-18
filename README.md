@@ -1,4 +1,9 @@
 # **PRIMER TRABAJO - PORTFOLIO EN MARKDOWN**
+---
+Autor: Álvaro Guerrero
+Asignatura (Grado Superior): Programación (DAM)
+
+---
 ![Imagen de portfolio](https://i.pinimg.com/564x/74/cc/58/74cc58b26b3c0f6475f7f3d2c369e05c.jpg)
 
 ---
@@ -20,11 +25,33 @@ código empleado en cualquier aplicación, la cual aunaría todo lo visto hasta 
 ## 2. ==Aprendizaje==
 * *¿Qué has aprendido durante las 2 unidades?*
 
-A lo largo de estas dos unidades he podido clarificar, en primer lugar, el concepto de clases y objetos y la relación
-que tienen entre sí. Algo que es muy importante a la hora de utilizar la programación orientada a objetos.
-En segundo lugar, y no menos importante, a definir las propiedades y métodos necesarios para que el programa/aplicación
-funcione correctamente. Cabe mencionar en este momento a los constructores, métodos que llevan el nombre de la propia
-clase y que sirven para definir las propiedades que consideremos necesarias en la creación de un objeto.
+A lo largo de estas dos unidades he podido clarificar, en primer lugar y con respecto a la POO (1ª unidad), el concepto 
+de **clases**, **objetos** y la relación que tienen entre sí. Algo que es muy importante a la hora de utilizar la 
+programación orientada a objetos.
+En segundo lugar, y no menos importante, a definir las **propiedades** y **métodos** necesarios para que el 
+programa/aplicación funcione correctamente. Cabe mencionar en este momento a los **constructores**, métodos que llevan
+el nombre de la propia clase y que sirven para definir las propiedades que consideremos necesarias en la creación de un
+objeto.
+En relación a la POO avanzada (2ª unidad), he aprendido a distinguir las diferentes relaciones existentes entre clases:
+* **Asociación**: clases cuyos objetos pueden comunicarse con objetos de otras clases.
+* **Agregación**: un objeto forma parte de otro.
+* **Composición**: un objeto contiene a otro (el pequeño no puede existir sin el superior).
+
+
+Por otro lado, y dentro de esta misma unidad de trabajo, he aprendido el concepto de **herencia** y su representación
+en notación **UML**, el cual lleva implícito en sí mismo otros dos muy importantes: **subclase y superclase**.
+Aparecen en este momento también palabras importantes como:
+* **Super**: que permite acceder a métodos de la clase superior cuando se ha anulado algún método.
+* **Casting**: que permite cambiar un objeto a otra clase siempre que sea compatible.
+* **Instanceof**: operador que devuelve verdadero si un objeto pertenece a una clase concreta.
+
+Finalmente, aparecen otros tres conceptos que han sido realmente útiles en el aprendizaje de la POO:
+* **Clase abstracta**: clase genérica que define los métodos de sus clases herederas pero sin implementarlos.
+* **Interfaz**: aseguran que una clase implementa métodos concretos (ej: Escribible)
+* **Clase object**: es la superclase de todas las clases en Java y todos los objetos de cualquier clase son 
+descendientes de ella.
+
+[**APUNTES** (Para más información...)](https://jorgesanchez.net/manuales/viejos/fpr/fpr0709.pdf)
 
 ---
 ## 3. ==Prácticas==
