@@ -1,6 +1,7 @@
 # **PRIMER TRABAJO - PORTFOLIO EN MARKDOWN**
 ---
 Autor: Álvaro Guerrero
+
 Asignatura (Grado Superior): Programación (DAM)
 
 ---
@@ -14,7 +15,7 @@ Personalmente, he de decir que había indagado de manera autodidacta sobre este 
 en el instituto. Por tanto, recordaba un poco sobre lo que iba el mismo.
 Sin embargo, antes de haber escuchado o leído sobre ello, previo al inicio de estos estudios, la verdad que no tenía 
 muy claro o no me imaginaba de lo que trataba la programación orientada a objetos en un principio.
-Pensé que sería un apartado más dentro del aprendizaje de programación como son variables, bucles, arrays, etc.
+Pensé que sería un apartado más dentro del aprendizaje de programación del estilo al de variables, bucles, arrays, etc.
 * *¿Para qué creías que iba a servir lo que ibas a ver sobre este tema?*
 
 Retomando y volviendo al curso en sí, y tal y como nos había adelantado el profesor a lo largo de lo que llevamos del
@@ -55,16 +56,79 @@ descendientes de ella.
 
 ---
 ## 3. ==Prácticas==
-* *Elige los 2 ejercicios de las prácticas que consideres más importantes.*
-* *¿Por qué?*
+* *Elige los 2 ejercicios de las prácticas que consideres más importantes. ¿Por qué? ¿Qué has aprendido con ellos?*
+
+Antes de mencionar los 2 ejercicios que, según mi opinión, han sido los más interesantes, me gustaría destacar el 
+ejercicio 21. Fue un ejercicio en el que había que crear dos clases "sencillitas" (Libro y Dado), el cual me pareció muy
+práctico a la hora de repasar y entender las bases y los conceptos de **clases**, **métodos** y **propiedades**.
+
+Ahora bien, el primer ejercicio que voy a elegir, es el ejercicio número 22 (**Pilas y Colas**). Fue una práctica que me
+resultó realmente interesante, lo primero, porque era algo nuevo para mí. Y en segundo lugar porque aprendí el 
+funcionamiento que tienen las pilas y las colas (creación de los métodos pertinentes). 
+
 * *¿Cómo los has resuelto?*
-* *¿Qué has aprendido con ellos?*
+A continuación muestro una parte del código correspondiente a dichos métodos:
+
+    * *Métodos push y pop de la Pila:*
+```
+public void push(String texto) { // Solo puedo hacer push si la pila no está llena
+        if (full() == false) { // podría poner (!full())
+            pila[cima] = texto;
+            cima++;
+        }
+    }
+
+    public String pop() {
+        if (empty() == false) {
+            String aux = pila[cima - 1];
+            cima--;
+            return aux;
+        } else { // obligatorio el else, porque si no da fallo. Es un método que tiene que devolver algo siempre.
+            return null;
+        }
+    }
+```
+
+    * *Métodos add y poll de la Cola:*
+
+```
+public void add(String nuevo) {
+
+        if (full() == false) {
+            cola[fin] = nuevo;
+            fin++;
+        }
+    }
+
+    public String poll() {
+        if (empty() == false) {
+            String res = cola[0];
+            // desplazamos todos los elementos de la cola a la izquierda
+            for (int i = 1; i < fin; i++) {
+                cola[i - 1] = cola[i];
+            }
+            fin--;
+            return res;
+        } 
+        else {
+            return null;
+        }
+    }
+```
 
 ---
 ## 4. ==Conclusiones==
 * *¿Qué has aprendido realmente?*
+
+
 * *¿Qué utilidad le ves?*
+
+
 * *Di lo más positivo que has adquirido en estas 2 unidades*
+
+
 * *Di lo que menos te ha gustado en estas 2 unidades*
+
+
 
 ---
