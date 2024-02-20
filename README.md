@@ -1,8 +1,8 @@
 # **PRIMER TRABAJO - PORTFOLIO EN MARKDOWN**
 ---
-Autor: Álvaro Guerrero
+*Autor*: Álvaro Guerrero
 
-Asignatura (Grado Superior): Programación (DAM)
+*Asignatura (Grado Superior)*: Programación (DAM)
 
 ---
 ![Imagen de portfolio](https://i.pinimg.com/564x/74/cc/58/74cc58b26b3c0f6475f7f3d2c369e05c.jpg)
@@ -62,15 +62,22 @@ Antes de mencionar los 2 ejercicios que, según mi opinión, han sido los más i
 ejercicio 21. Fue un ejercicio en el que había que crear dos clases "sencillitas" (Libro y Dado), el cual me pareció muy
 práctico a la hora de repasar y entender las bases y los conceptos de **clases**, **métodos** y **propiedades**.
 
-Ahora bien, el primer ejercicio que voy a elegir, es el ejercicio número 22 (**Pilas y Colas**). Fue una práctica que me
-resultó realmente interesante, lo primero, porque era algo nuevo para mí. Y en segundo lugar porque aprendí el 
-funcionamiento que tienen las pilas y las colas (creación de los métodos pertinentes). 
+Ahora bien, el primer ejercicio que voy a elegir, es el ejercicio **número 22** (**Pilas y Colas**). Fue una práctica 
+que me resultó realmente interesante, lo primero, porque era algo nuevo para mí. Y en segundo lugar, porque aprendí el 
+funcionamiento que tienen las pilas y las colas (creación de los métodos pertinentes) en programación. 
 
-* *¿Cómo los has resuelto?*
-A continuación muestro una parte del código correspondiente a dichos métodos:
+* *¿Cómo lo has resuelto?*
 
-    * *Métodos push y pop de la Pila:*
-```
+En este caso comencé creando la clase Pila, declarando las propiedades correspondientes, para posteriormente comenzar
+con los métodos que facilitaba la práctica. Una vez creados los métodos, procedí a crear la clase "App.java", clase 
+principal la cual serviría para comprobar si lo establecido en las otras (clases) funcionaba o no.
+
+El proceso de creación de la clase "Cola" fue el mismo que el anterior.
+
+A continuación muestro una parte del código correspondiente a los métodos más característicos del ejercicio:
+
+*Métodos push y pop de la Pila:*
+```Java
 public void push(String texto) { // Solo puedo hacer push si la pila no está llena
         if (full() == false) { // podría poner (!full())
             pila[cima] = texto;
@@ -88,10 +95,8 @@ public void push(String texto) { // Solo puedo hacer push si la pila no está ll
         }
     }
 ```
-
-    * *Métodos add y poll de la Cola:*
-
-```
+*Métodos add y poll de la Cola:*
+```Java
 public void add(String nuevo) {
 
         if (full() == false) {
@@ -114,6 +119,87 @@ public void add(String nuevo) {
             return null;
         }
     }
+```
+Por otro lado, el segundo ejercicio que me gustaría destacar es el **número 25**, relacionado con POO avanzada y la cual
+trataba de los dispositivos (ordenadores y móviles) de los que dispone una empresa. Este ejercicio fue el primero que 
+desarrollamos a partir del diagrama UML proporcionado por el profesor.
+
+Uno de los aspectos por los que considero a este ejercicio importante es porque era el primero que hacíamos en el cual 
+aparecían diferentes tipos de relaciones entre las clases/objetos (**herencia**, **composición** y **agregación**).
+
+El conocer el tipo de relación entre objetos es clave a la hora de programar, ya que se hace de una manera u otra según 
+sea el tipo de relación que une a dichos objetos.
+
+* *¿Cómo lo has resuelto?*
+
+En este caso aparecía una relación de **composición** de la cámara con el móvil (sin móvil no hay cámara), y una de
+**agregación** del ordenador con la empresa (sin empresa los ordenadores siguen existiendo).
+
+Además, había dos relaciones de **herencia**, ya que las **subclases** portátil y móvil pertenecían a la **superclase** 
+ordenador (uso de la palabra "extends" en la declaración de la clase).
+
+Una vez establecidas las relaciones, comencé a crear las clases más sencillas primero y dejé la clase "Empresa" para el 
+final, la cual me complicó el ejercicio un poco y no pude terminarlo del todo.
+
+A continuación muestro una parte del código correspondiente a los métodos más significativos del ejercicio:
+
+*Herencia de Portátil con Ordenador:*
+```Java
+public class Portatil extends Ordenador {
+    protected double peso;
+```
+*Métodos constructores de la clase Ordenador:*
+```Java
+public class Ordenador {
+    protected int ram;
+    protected int hd;
+    protected String procesador;
+    protected String nombre;
+    protected boolean encendido = false;
+
+    //CONSTRUCTORES
+    public Ordenador(String nombre) {
+        this.nombre = nombre;
+        this.ram = 4;
+        this.hd = 512;
+        this.procesador = "i3";
+    }
+
+    public Ordenador(String nombre, int ram, int hd, String procesador) {
+        this.nombre = nombre;
+        this.ram = ram;
+        this.hd = hd;
+        this.procesador = procesador;
+    }
+}
+```
+*Clase Móvil:*
+```Java
+public class Movil extends Ordenador {
+    private String tipo;
+    private Camara camara; //Se necesita crear esta propiedad para que la variable abajo no muera
+
+    //CONSTRUCTOR
+    public Movil (String nombre, int ram, int hd, String procesador, String tipo, double apertura, 
+    int megapixeles, String marca){
+        super(nombre, ram, hd, procesador);
+        this.tipo = tipo;
+        camara = new Camara(apertura, megapixeles, marca);              
+    }
+
+    //OTROS MÉTODOS
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    @Override
+    public void escribir() {
+        super.escribir();
+        System.out.println("El tipo de móvil es: " + tipo);
+        camara.escribir();
+    }
+}
+
 ```
 
 ---
