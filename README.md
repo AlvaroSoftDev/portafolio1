@@ -1,8 +1,8 @@
 # **PRIMER TRABAJO - PORTFOLIO EN MARKDOWN**
 ---
-*Autor*: Álvaro Guerrero
+***Autor:*** Álvaro Guerrero
 
-*Asignatura (Grado Superior)*: Programación (DAM)
+***Asignatura (Grado Superior):*** Programación (DAM)
 
 ---
 ![Imagen de portfolio](https://i.pinimg.com/564x/74/cc/58/74cc58b26b3c0f6475f7f3d2c369e05c.jpg)
@@ -205,15 +205,31 @@ public class Movil extends Ordenador {
 ---
 ## 4. ==Conclusiones==
 * *¿Qué has aprendido realmente?*
-
+    + He aprendido la diferencia que hay entre las distintas relaciones que se pueden dar entre clases (*asociación, 
+agregación y composición*) y, por tanto, a entender los diagramas UML en los que dichas relaciones vienen dibujadas.
+    + Como parte teórica de estas unidades, destacaría los conceptos de: encapsulamiento, ocultación y polimorfismo. 
+Palabras que son clave para un posterior entendimiento del funcionamiento de las clases y los objetos.
+    + A su vez, también he entendido y aprendido otros conceptos importantes como: herencia (*superclase-subclase*), 
+clase abstracta, interfaz y clase object(*clase padre de todas las clases*).
+    + Finalmente, otro punto que me gustaría resaltar en este proceso de aprendizaje, es la importancia de los 
+**métodos estáticos** a la hora de programar, ya que te permiten su uso sin la necesidad de crear un objeto.
 
 * *¿Qué utilidad le ves?*
-
+    + La principal utilidad que le veo a la Programación Orienta a Objetos (*POO*) es el **mantenimiento** de un 
+proyecto. Al estar dividido en módulos (clases), hace que cualquier error a corregir/mejorar por el programador/a sea 
+mucho más fácil de encontrar y, por tanto, la problemática de la desestructuración quede resuelta. 
+    + Otro aspecto, cuanto menos relacionado con el anterior es, sin duda, la **eficiencia** a la hora de desarrollar 
+una aplicación/proyecto. El hecho de esa división en módulos de la que hablaba previamente, hace que todo esté mucho más 
+organizado y sea más accesible para el programador/a.
 
 * *Di lo más positivo que has adquirido en estas 2 unidades*
-
+    + Creo que lo más **positivo** ha sido entender el **funcionamiento** de esta metodología a la hora de programar, ya
+que me permitirá organizar mi código en unidades lógicas y posiblemente reutilizables. 
 
 * *Di lo que menos te ha gustado en estas 2 unidades*
+    + Diría que no hay nada en concreto que **no** me haya gustado. Estoy intentando disfrutar la asignatura al máximo,
+tratando de entender y aplicar todo lo que aprendo en el aula. Simplemente, desde mi punto de vista y tal y como diría 
+nuestro profesor, me faltan **"horas de vuelo"** para familiarizarme mucho más con la programación en general.
 
 
 
