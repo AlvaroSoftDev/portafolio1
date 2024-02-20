@@ -2,7 +2,7 @@
 ---
 ***Autor:*** Álvaro Guerrero
 
-***Asignatura (Grado Superior):*** Programación (DAM)
+***Asignatura (Grado Superior):*** Programación (1º DAM)
 
 ---
 ![Imagen de portfolio](https://i.pinimg.com/564x/74/cc/58/74cc58b26b3c0f6475f7f3d2c369e05c.jpg)
@@ -29,10 +29,12 @@ código empleado en cualquier aplicación, la cual aunaría todo lo visto hasta 
 A lo largo de estas dos unidades he podido clarificar, en primer lugar y con respecto a la POO (1ª unidad), el concepto 
 de **clases**, **objetos** y la relación que tienen entre sí. Algo que es muy importante a la hora de utilizar la 
 programación orientada a objetos.
+
 En segundo lugar, y no menos importante, a definir las **propiedades** y **métodos** necesarios para que el 
 programa/aplicación funcione correctamente. Cabe mencionar en este momento a los **constructores**, métodos que llevan
 el nombre de la propia clase y que sirven para definir las propiedades que consideremos necesarias en la creación de un
 objeto.
+
 En relación a la POO avanzada (2ª unidad), he aprendido a distinguir las diferentes relaciones existentes entre clases:
 * **Asociación**: clases cuyos objetos pueden comunicarse con objetos de otras clases.
 * **Agregación**: un objeto forma parte de otro.
@@ -207,12 +209,14 @@ public class Movil extends Ordenador {
 * *¿Qué has aprendido realmente?*
     + He aprendido la diferencia que hay entre las distintas relaciones que se pueden dar entre clases (*asociación, 
 agregación y composición*) y, por tanto, a entender los diagramas UML en los que dichas relaciones vienen dibujadas.
-    + Como parte teórica de estas unidades, destacaría los conceptos de: encapsulamiento, ocultación y polimorfismo. 
+    + Como parte teórica de estas unidades, destacaría los conceptos de: *encapsulamiento, ocultación y polimorfismo*. 
 Palabras que son clave para un posterior entendimiento del funcionamiento de las clases y los objetos.
     + A su vez, también he entendido y aprendido otros conceptos importantes como: herencia (*superclase-subclase*), 
 clase abstracta, interfaz y clase object(*clase padre de todas las clases*).
     + Finalmente, otro punto que me gustaría resaltar en este proceso de aprendizaje, es la importancia de los 
 **métodos estáticos** a la hora de programar, ya que te permiten su uso sin la necesidad de crear un objeto.
+
+[X] Ver más información en el punto 2 (Aprendizaje).
 
 * *¿Qué utilidad le ves?*
     + La principal utilidad que le veo a la Programación Orienta a Objetos (*POO*) es el **mantenimiento** de un 
